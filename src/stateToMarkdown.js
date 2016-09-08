@@ -130,7 +130,7 @@ class MarkupGenerator {
       }
       case BLOCK_TYPE.CODE: {
         this.insertLineBreaks(1);
-        this.output.push('```\n' + this.renderBlockContent(block) + '\n```');
+        this.output.push('```\n' + this.renderBlockContent(block) + '\n```\n');
         break;
       }
       default: {
